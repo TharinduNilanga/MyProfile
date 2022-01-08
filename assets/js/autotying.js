@@ -51,6 +51,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { color:#FFA500;font-weight:500; font-family: sans-serif; }";
+    css.innerHTML = ".txt-rotate > .wrap { color:#43658B;font-weight:500;font-size: 30px;; font-family: sans-serif; }";
     document.body.appendChild(css);
 };

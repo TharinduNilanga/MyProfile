@@ -8,12 +8,15 @@
     <title>My profile</title>
    <!-- <link rel="stylesheet" href="css/styleSheet.css">-->
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="assets/js/autotying.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <style>
 /*           header{
             background-color: #191C41;
@@ -291,12 +294,18 @@
         }
         #name{
             position: absolute;
-            font-size: 70px;
             margin:0px;
             font-family: 'Concert One', cursive;
             left: 500px;
             top: 200px;
-            color: #E5E6F9;
+            color: transparent;
+
+            font-size: 80px;
+            -webkit-text-stroke: 1px #fff;
+            background: url(assets/images/back1.png);
+            -webkit-background-clip: text;
+            animation: back 20s linear infinite;
+
 
         }
         #n2{
@@ -319,18 +328,127 @@
         }
         #abouthr{
             position: absolute;
-            width: 5px;
+            width: 2px;
             height: 130px;
             background-color: #646666;
             left: 565px;
             top: 352px;
             border-radius: 20px;
         }
-         .aboutme{
+         .aboutme {
              height: 100vh;
              background-color: #040518;
              margin-top: -23px;
          }
+            #nameheadingaboutme{
+                color: white;
+                font-family: 'Concert One', cursive;
+                position: absolute;
+                left: 20px;
+            }
+            @keyframes back {
+                100% {
+                    background-position: 2000px 0;
+                }
+            }
+            #aboutmehr{
+                position: absolute;
+                width: 140px;
+                height: 4px;
+                left:15px;
+                top: 50px;
+                background-color: white;
+                border-radius: 20px;
+            }
+            #aboutmefirstdiv{
+                position: absolute;
+                width: 800px;
+                height:400px;
+                left: 40px;
+                top: 90px;
+                background-color: #090B24;
+                border-radius: 10px;
+            }
+            #aboutmeh1{
+                position: absolute;
+                color: white;
+                top: 70px;
+                left:70px;
+                font-size: 40px;
+                font-family:  'Open Sans', sans-serif;
+            }
+            #aboutmepara{
+                position: absolute;
+                color: white;
+                top: 115px;
+                left:140px;
+                font-size: 22px;
+                color: #AAAFF6;
+                font-family: 'Poppins', sans-serif;
+            }
+            #aboutmeatglinehead{
+                color: white;
+                position: absolute;
+                top: 320px;
+                left: 70px;
+                font-size: 18px;
+                font-family: 'Tauri', sans-serif;
+            }
+            #taglinequote{
+                color: white;
+                position: absolute;
+                top: 360px;
+                left:120px;
+                font-size: 16px;
+                font-family: 'Tauri', sans-serif;
+            }
+            #taglinequote>li{
+                padding-bottom: 20px;
+            }
+            #aboutmeimg>img{
+                position: absolute;
+                right:50px;
+                top: 80px;
+                width:450px;
+                height: 450px;
+            }
+            #aboutmeimg>button{
+                position: absolute;
+                width: 250px;
+                height: 40px;
+                right:150px;
+                top: 550px;
+                background-color: #0B5E20;
+                color: white;
+                font-size: 24px;
+                border-radius: 15px;
+
+            }
+            #aboutmeimgicon>img:nth-child(1){
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                right:310px;
+                top: 630px;
+
+            }
+            #aboutmeimgicon>img:nth-child(2){
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                right:240px;
+                top: 630px;
+
+            }
+            #aboutmeimgicon>img:nth-child(3){
+                height: 45px;
+                width: 45px;
+                position: absolute;
+                right:170px;
+                top: 630px;
+
+            }
+
     </style>
 </head>
 <body>
@@ -369,16 +487,40 @@
                 <li>Web Developer</li>
                 <li>Designer</li>
             </ul>
+            <!--<h3 id="list"> <span class="txt-rotate" data-period="2000"
+                        data-rotate='[ "Programmer.", "Developer.", "Designer.", "Freelancer."]'></span></h3>-->
         </div>
         <hr id="abouthr">
     </section>
     <!---------------ABOUT ME------------------->
     <section class="aboutme">
-        <h1>About Me</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <h1 id="nameheadingaboutme">About Me</h1>
+        <hr id="aboutmehr">
+        <div id="aboutmefirstdiv"></div>
+        <div id="aboutmetag">
+            <h1 id="aboutmeh1">I'm</h1>
+            <pr id="aboutmepara">K.A Tharidu Nilanga Kumara Weerasena and I.m a <br>
+                professional Software Developer  Ui/Ux Designer and <br>
+                a web developer from  Horana <br> <br>
+                I'm currently studying in IJSE institute of software engineering <br>
+                in panadura. <br>
+                I'm excellent in developing and designing</pr>
+            <h1 id="aboutmeatglinehead">LIFE TAG LINES :</h1>
+            <ul id="taglinequote">
+                <li>NEVER COMPLAIN AND NEVER EXPLAIN ..</li>
+                <li>I'LL SUCCESSFULL NOT IMMEDIALTELY BUT DEFINETLY ..</li>
+            </ul>
+
+        </div>
+        <div id="aboutmeimg">
+            <img src="assets/images/pic3.png" alt="">
+            <button>DOWNLOAD CV</button>
+        </div>
+        <div id="aboutmeimgicon">
+            <img src="assets/images/facebook.png" alt="fb">
+            <img src="assets/images/instagram.png" alt="insta">
+            <img src="assets/images/github%20(1).png" alt="git">
+        </div>
     </section>
     <!---------------SKILLS------------------->
     <section></section>
