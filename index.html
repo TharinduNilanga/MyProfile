@@ -224,8 +224,7 @@
 
         header{
             height: 50px;
-            /*background-color: #191C41;*/
-            background-color: #ff253a;
+            background-color: #191C41;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -275,33 +274,63 @@
             top: 550px;
             padding: 0 5px 0 5px;
         }
-        main>section:nth-child(1)>div:nth-child(4){
-            color: white;
-            position: absolute;
-            left:550px;
-            top: 100px;
 
-        }
         #hello{
+            position: absolute;
             font-family: 'Montserrat', sans-serif;
             font-size: 50px;
+            left: 500px;
+            top: 100px;
+            color: white;
         }
         #I{
             position: absolute;
-            left: 146px;
-            bottom: 243px;
+            left: 650px;
+            top: 130px;
+            color: white;
         }
         #name{
+            position: absolute;
             font-size: 70px;
             margin:0px;
-
             font-family: 'Concert One', cursive;
-
+            left: 500px;
+            top: 200px;
+            color: #E5E6F9;
 
         }
         #n2{
+            position: absolute;
+            left: 509px;
+            top: 280px;
+            color:#646666;
+        }
+        #list{
+            position: absolute;
+            left: 560px;
+            top: 350px;
+            color: #BBBEC0;
+
 
         }
+        #list>li{
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+        #abouthr{
+            position: absolute;
+            width: 5px;
+            height: 130px;
+            background-color: #646666;
+            left: 565px;
+            top: 352px;
+            border-radius: 20px;
+        }
+         .aboutme{
+             height: 100vh;
+             background-color: #040518;
+             margin-top: -23px;
+         }
     </style>
 </head>
 <body>
@@ -335,18 +364,21 @@
             <h1 id="name">Tharindu Nilanga Kumara</h1>
             <h1 id="n2">And I'm a</h1>
 
-            <ul>
+            <ul id="list">
                 <li>FullStack Developer</li>
                 <li>Web Developer</li>
-                <li></li>
+                <li>Designer</li>
             </ul>
-
         </div>
+        <hr id="abouthr">
     </section>
     <!---------------ABOUT ME------------------->
     <section class="aboutme">
-
-
+        <h1>About Me</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </section>
     <!---------------SKILLS------------------->
     <section></section>
