@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+/*        section{
+            position: relative;
+            background-color: dodgerblue;
+            height: 100vh;
+        }
+        section>section{
+            position: absolute;
+            border: 20px solid white;
+            border-top: 20px solid red;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: gray;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+      section>section>h2{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: max-content;
+          height: max-content;
+          font-size:50px;
+      }
+        section>section:hover{
+            transform: rotate(360deg);
+            transition: all 2s;
+            cursor: pointer;
+        }
+        section>section:hover h2{
+            transform: rotate(-360deg);
+            transition: all 2s;
+        }*/
+        section{
+            position: relative;
+            background-color: dodgerblue;
+            height: 100vh;
+        }
+        section>section{
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: gray;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section>section>h2{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            font-size:50px;
+            z-index: 100;
+        }
+        section>section::after{
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 100%;
+            background-color: gray;
+            border: 20px solid white;
+            border-top: 20px solid red;
+            
+           /* border-right: 20px solid;*/
+        }
+        section>section:hover::after{
+            transform: rotate(360deg);
+            transition: all 1s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <section>
+    <section>
+        <h2>RWAD</h2>
+    </section>
+
+  </section>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        main{
+            height:100vh;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            overflow-x:hidden;
+            overflow-y: hidden;
+
+        }
+        main>div:nth-child(1){
+            height: 60vh;
+            background: url("assets/images/sky.jpg");
+        }
+        main>div:nth-child(2){
+            position:absolute;
+            width: 400%;
+            height: 80%;
+            bottom: 0px;
+
+            display: flex;
+            flex-direction: row;
+            animation-name: new1;
+            animation-duration: 15s;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        main>div:nth-child(2)>div{
+            width: 100%;
+
+
+        }
+        main>div:nth-child(2)>div>div:nth-child(1){
+            height: 42%;
+            background: url("assets/images/city.png");
+
+        }
+        main>div:nth-child(2)>div>div:nth-child(2){
+            height: 59%;
+            background: url("assets/images/road.jpg");
+            z-index: 100;
+
+        }
+        @keyframes new1 {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            100%{
+                left: -300%;
+            }
+        }
+        main>div:nth-child(3)>img{
+            position: fixed;
+            width: 400px;
+            height: 200px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 100;
+        }
+        main>div:nth-child(4)>img{
+            position: fixed;
+            width: 85px;
+            height: 85px;
+            top: 93px;
+            left: 0;
+            right: 255px;
+            bottom: 0;
+            margin: auto;
+            animation-name: new;
+            animation-duration: 15s;
+            animation-iteration-count: 1;
+            z-index: 100;
+        }
+        main>div:nth-child(5)>img{
+            position: fixed;
+            width: 85px;
+            height: 85px;
+            top: 93px;
+            left: 0;
+            right: -235px;
+            bottom: 0;
+            margin: auto;
+            animation-name: new;
+            animation-duration: 15s;
+            animation-iteration-count:1;
+            z-index: 100;
+        }
+
+        @keyframes new {
+            from {
+                transform: rotate(-7200deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div>
+
+    </div>
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div><img src="assets/images/car.png" alt=""></div>
+    <div><img src="assets/images/wheel.png" alt=""></div>
+    <div><img src="assets/images/wheel.png" alt=""></div>
+</main>
+</body>
+</html>

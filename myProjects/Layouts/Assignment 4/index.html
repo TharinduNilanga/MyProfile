@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+ /*       section{
+            position: relative;
+            border: 1px solid red;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+        section:nth-child(1)>head{
+            position: sticky;
+            background-color: red;
+            height: 60px;
+        }
+        section:nth-child(2)>head{
+
+            background-color: dodgerblue;
+            height: 60px;
+        }
+        section:nth-child(3)>head{
+
+            background-color:gray;
+            height: 60px;
+        }
+        section:nth-child(4)>head{
+            background-color:red;
+            height: 60px;
+        }
+        section:nth-child(1)>p{
+            font-size: 30px;
+
+        }
+*/
+        section{
+            height: 100vh;
+            position: relative;
+        }
+        section>div{
+            height:100vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        section:nth-child(1)>header{
+            position: sticky;
+            top: 0;
+            background-color: red;
+            height: 60px;
+            z-index: 100;
+        }
+         section:nth-child(2)>header{
+             position: sticky;
+             top: 0;
+             background-color:darkblue;
+             height: 60px;
+             z-index: 100;
+         }
+         section:nth-child(3)>header{
+             position: sticky;
+             top: 0;
+             background-color: #3B3B3B;
+             height: 60px;
+             z-index: 100;
+         }
+         section:nth-child(4)>header{
+             position: sticky;
+             top: 0;
+             background-color: darkred;
+             height: 60px;
+             z-index: 100;
+         }
+         section>header>h2{
+             position: relative;
+             margin: unset;
+             color: white;
+             top:15px ;
+         }
+         section>div>h1{
+          font-size: 80px;
+
+         }
+
+         section:nth-child(2)>div{
+             background-color: dodgerblue;
+         }
+         section:nth-child(3)>div{
+             background-color: #636362;
+         }
+         section:nth-child(4)>div{
+             background-color: red;
+         }
+
+
+    </style>
+</head>
+<body>
+<section>
+
+        <header>
+            <h2>Card 1</h2>
+        </header>
+
+       <div>
+           <h1>Hello</h1>
+       </div>
+</section>
+<section>
+
+        <header>
+            <h2>Card 2</h2>
+        </header>
+
+    <div>
+        <h1>How</h1>
+    </div>
+</section>
+<section>
+
+        <header>
+            <h2>Card 3</h2>
+        </header>
+
+    <div>
+        <h1>Are</h1>
+    </div>
+</section>
+<section>
+
+        <header>
+            <h2>Card 4</h2>
+        </header>
+
+   <div>
+       <h1>You..?</h1>
+   </div>
+</section>
+</body>
+</html>

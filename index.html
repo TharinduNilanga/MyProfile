@@ -8,7 +8,13 @@
     <title>My profile</title>
    <!-- <link rel="stylesheet" href="css/styleSheet.css">-->
     <link rel="stylesheet" href="css/normalize.css">
-    <style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+        <style>
 /*           header{
             background-color: #191C41;
         }
@@ -250,7 +256,7 @@
             bottom: 0;
             width: 1250px;
             height: 1000px;
-            opacity: 50%;
+            opacity: 30%;
         }
         main>section:nth-child(1)>div:nth-child(2)>img:nth-child(1){
             position: absolute;
@@ -268,8 +274,32 @@
             top: 550px;
             padding: 0 5px 0 5px;
         }
-        main>section:nth-child(1)>div:nth-child(4)>h1:nth-child(1){
+        main>section:nth-child(1)>div:nth-child(4){
             color: white;
+            position: absolute;
+            left:550px;
+            top: 100px;
+
+        }
+        #hello{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+        }
+        #I{
+            position: absolute;
+            left: 146px;
+            bottom: 243px;
+        }
+        #name{
+            font-size: 70px;
+            margin:0px;
+
+            font-family: 'Concert One', cursive;
+
+
+        }
+        #n2{
+
         }
     </style>
 </head>
@@ -299,10 +329,11 @@
             <img src="assets/images/github%20(1).png" alt="git">
         </div>
         <div>
-            <h1>Hello,</h1>
-            <h1>I'm</h1>
-            <h1>Tharindu Nilanga Kumara</h1>
-            <h1>And I'm a</h1>
+            <h1 id="hello">Hello,</h1>
+            <h1 id="I">I'm</h1>
+            <h1 id="name">Tharindu Nilanga Kumara</h1>
+            <h1 id="n2">And I'm a</h1>
+
             <ul>
                 <li>FullStack Developer</li>
                 <li>Web Developer</li>

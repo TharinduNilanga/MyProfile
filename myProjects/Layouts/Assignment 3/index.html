@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section{
+
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+        section:nth-child(1)>div{
+            position: relative;
+            background-color: purple;
+            width: 210px;
+            height: 210px;
+            border-radius: 100%;
+            z-index:-100;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        section>section{
+            position: fixed;
+            border: 20px solid #888051;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+        }
+        section>section>section{
+            position: fixed;
+            border: 25px solid red;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+        section:nth-child(2)>div{
+            position: relative;
+            background-color: dodgerblue;
+            width: 210px;
+            height:210px;
+            border-radius: 100%;
+            z-index:-100;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        section:nth-child(3)>div{
+            position: relative;
+            background-color: chocolate;
+            width:210px;
+            height: 210px;
+            border-radius: 100%;
+            z-index:-100;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        section:nth-child(1)>div>h2{
+            color: white;
+
+
+
+        }
+        section:nth-child(2)>div>h2{
+            color: white;
+
+
+        }
+        section:nth-child(3)>div>h2{
+            color: white;
+
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h2>Hello</h2>
+    </div>
+   <section>
+        <section></section>
+   </section>
+</section>
+<section>
+    <div>
+        <h2>Welcome to</h2>
+    </div>
+</section>
+<section>
+    <div>
+      <!--  <h1>Institute  of software engineering</h1>-->
+        <h2>Institute <br> of <br> software <br> engineering</h2>
+    </div>
+</section>
+</body>
+</html>

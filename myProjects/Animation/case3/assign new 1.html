@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+       main{
+           height:100vh;
+         /*  width: 800px;*/
+           position: absolute;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           top: 0;
+           margin: auto;
+           overflow-x:hidden;
+           overflow-y: hidden;
+       }
+        main>section{
+            width: 400%;
+            height: 100%;
+            display: flex;flex-direction: row;
+            animation-name: new;
+            position: relative;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-duration: 5s;
+        }
+       main>section>div{
+           width: 100%;
+       }
+       main>section>div:nth-child(1){
+           background: url("assets/images/1.jpg");
+           background-size: cover;
+           background-position: center;
+       }
+       main>section>div:nth-child(2){
+
+           background: url("assets/images/j1.jpg");
+           background-size: cover;
+           background-position: center;
+       }
+       main>section>div:nth-child(3){
+
+           background: url("assets/images/j2.jpg");
+           background-size: cover;
+           background-position: center;
+       }
+       main>section>div:nth-child(4){
+           background: url("assets/images/tuto-java-1-800x445.jpg");
+           background-size: cover;
+           background-position: center;
+       }
+        @keyframes new {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+           100%{
+                left: -300%;
+            }
+
+         /*      @keyframes slideme {
+            0%,20%{
+                transform: translateX(0);
+            }
+            25%,45%{
+                transform: translateX(-25%);
+            }
+            50%,75%{
+                transform: translateX(-50%);
+            }
+
+            100%{
+                transform: translateX(-75%);
+            }
+        }
+            }*/
+
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>

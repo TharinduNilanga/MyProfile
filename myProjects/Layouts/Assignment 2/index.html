@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initail-scale=1">
+    <style>
+        header{
+            background-color: lavender;
+            position: relative;
+            height: 60px;
+            box-shadow: 10px 10px 10px -8px;
+        }
+        header>div>img{
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 200px;
+        }
+        header>ul{
+            position: absolute;
+            right: 40px;
+            top: 8px;
+            list-style: none;
+
+
+        }
+        header>ul>li{
+            display: inline;
+            font-size: 20px;
+            font-family: 'Bebas Neue', cursive;
+            padding: 0 15px 0 15px;
+        }
+        header>ul>li:hover{
+            cursor: pointer;
+        }
+        main{
+            position: relative;
+
+        }
+        main>nav{
+            /* border: 1px solid red;*/
+            position: absolute;
+            background-color: rgb(76, 0, 130);
+            width: 200px;
+            top: 0;
+            bottom: 0;
+        }
+        main>nav>ul{
+            list-style: none;
+            position:relative;
+            left: 10px;
+        }
+        main>nav>ul>li{
+            font-size: 20px;
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            padding: 10px 0px 10px 0px;
+        }
+        main>section{
+            /* border: 1px solid white;*/
+            margin-left: 200px;
+            position: relative;
+
+        }
+        main>section>section{
+
+            height: 210px;
+            position: relative;
+            display: flex;
+
+        }
+        main>section>section>div{
+            flex-grow: 1;
+        }
+        main>section>section>div:nth-child(1){
+
+            background: url("assets/images/j1.jpg");
+            background-size: cover;
+        }
+        main>section>section>div:nth-child(2){
+
+            background: url("assets/images/tuto-java-1-800x445.jpg");
+            background-size: cover;
+        }
+        main>section>section>div:nth-child(3){
+            background: url("assets/images/j2.jpg");
+            background-size: cover;
+        }
+        /*        main>section>section>div>img{
+                    !* height: 100%;
+                     background-size: cover;
+                     width: 259px;*!
+                }
+                #a{
+                    width: 400px;
+                    height: 200px;
+                }
+                #b{
+
+                    left: 400px;
+                    width: 400px;
+                    height: 200px;
+                }
+                #c{
+
+                    width: 400px;
+                    height:200px;
+                }*/
+        footer{
+            position: absolute;
+            /*border: 1px solid red;*/
+            left: 0;
+            right: 0;
+            margin-top: -15px;
+            background-color: darkgray;
+            height: 50px;
+        }
+        footer>h3{
+            position: absolute;
+            right: 30px;
+            top: 0;
+            text-align: right;
+            color: white;
+        }
+
+       /* @media all and (max-width: 435px) {
+            header{
+                height: 50px;
+            }
+            header>div>img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            header>ul {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 32px;
+                width: max-content;
+            }
+            header>ul>li {
+                font-size: 10px;
+            }
+            main>nav {
+                display: none;
+            }
+            main>section {
+                margin-left: unset;
+            }
+            main>section>section {
+
+                flex-direction: column;
+            }
+
+            main>section>section {
+                height: 489px;
+
+            }
+            main>section>p{
+                color:dimgrey;
+
+            }
+
+        }*/
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <img src="assets/images/ijselogo.png" alt="">
+    </div>
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contact</li>
+        <li>About us</li>
+    </ul>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About us</li>
+        </ul>
+    </nav>
+    <section>
+        <section >
+            <div></div>
+            <div></div>
+            <div></div>
+            <!--  <div ><img id="a" src="assets/images/j1.jpg" alt=""></div>
+              <div ><img id="b" src="assets/images/tuto-java-1-800x445.jpg" alt=""></div>
+              <div ><img id="c" src="assets/images/j2.jpg" alt=""></div>-->
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at dicta, eaque enim facere, facilis laboriosam
+            laborum nihil quos repellendus suscipit ut vel voluptatibus? Animi deleniti illo in! Quam, ut!</p>
+        <p>Explicabo ipsa necessitatibus quasi quis quisquam, tempora temporibus totam? Animi beatae consectetur
+            consequatur consequuntur earum expedita incidunt iste iure laborum magnam molestias mollitia nisi quae quam,
+            quasi qui similique sint.</p>
+        <p>Delectus fugiat ipsum magni, possimus quae tempore. Accusantium blanditiis consectetur cumque distinctio ea
+            earum eius fugit harum impedit nam natus, odio optio provident recusandae sed sint sunt voluptas. Alias,
+            eum.</p>
+        <p>Amet animi beatae consequatur eligendi eum eveniet ex harum inventore labore laborum nam, pariatur provident
+            quaerat quidem repellendus saepe sequi sunt vero! Consequatur corporis ea et minus nihil quae sequi?</p>
+        <p>Accusamus, accusantium assumenda delectus ducimus facilis illum incidunt modi officia quidem quod repellendus
+            similique sunt! Consequatur delectus doloremque doloribus eius error expedita hic ipsa mollitia nobis
+            perferendis, saepe sapiente sunt?</p>
+        <p>Aliquid cupiditate delectus eius fugiat inventore ipsa iste laborum modi nam, nesciunt quia quisquam
+            similique voluptate. Blanditiis cumque dignissimos id laboriosam maiores optio quo recusandae repudiandae,
+            ut veniam vitae voluptatem.</p>
+        <p>Aliquid atque est impedit, non porro quo voluptates. Atque ex iste laborum obcaecati perspiciatis, quam
+            quibusdam quo quos repellendus? Alias culpa excepturi facere fugit ipsam natus repudiandae velit. Dolorem,
+            molestiae.</p>
+        <p>Dolor exercitationem illo, in ipsam ipsum iste minus quas ut voluptatem. Accusantium atque commodi
+            consectetur ducimus ea facere, fuga itaque iure natus numquam quaerat quas quia quidem recusandae veritatis
+            voluptate.</p>
+        <p>Amet animi beatae consequatur eligendi eum eveniet ex harum inventore labore laborum nam, pariatur provident
+            quaerat quidem repellendus saepe sequi sunt vero! Consequatur corporis ea et minus nihil quae sequi?</p>
+        <p>Accusamus, accusantium assumenda delectus ducimus facilis illum incidunt modi officia quidem quod repellendus
+            similique sunt! Consequatur delectus doloremque doloribus eius error expedita hic ipsa mollitia nobis
+            perferendis, saepe sapiente sunt?</p>
+        <p>Aliquid cupiditate delectus eius fugiat inventore ipsa iste laborum modi nam, nesciunt quia quisquam
+            similique voluptate. Blanditiis cumque dignissimos id laboriosam maiores optio quo recusandae repudiandae,
+            ut veniam vitae voluptatem.</p>
+        <p>Aliquid atque est impedit, non porro quo voluptates. Atque ex iste laborum obcaecati perspiciatis, quam
+            quibusdam quo quos repellendus? Alias culpa excepturi facere fugit ipsam natus repudiandae velit. Dolorem,
+            molestiae.</p>
+        <p>Dolor exercitationem illo, in ipsam ipsum iste minus quas ut voluptatem. Accusantium atque commodi
+            consectetur ducimus ea facere, fuga itaque iure natus numquam quaerat quas quia quidem recusandae veritatis
+            voluptate.</p>
+        <p>Amet animi beatae consequatur eligendi eum eveniet ex harum inventore labore laborum nam, pariatur provident
+            quaerat quidem repellendus saepe sequi sunt vero! Consequatur corporis ea et minus nihil quae sequi?</p>
+        <p>Accusamus, accusantium assumenda delectus ducimus facilis illum incidunt modi officia quidem quod repellendus
+            similique sunt! Consequatur delectus doloremque doloribus eius error expedita hic ipsa mollitia nobis
+            perferendis, saepe sapiente sunt?</p>
+        <p>Aliquid cupiditate delectus eius fugiat inventore ipsa iste laborum modi nam, nesciunt quia quisquam
+            similique voluptate. Blanditiis cumque dignissimos id laboriosam maiores optio quo recusandae repudiandae,
+            ut veniam vitae voluptatem.</p>
+        <p>Aliquid atque est impedit, non porro quo voluptates. Atque ex iste laborum obcaecati perspiciatis, quam
+            quibusdam quo quos repellendus? Alias culpa excepturi facere fugit ipsam natus repudiandae velit. Dolorem,
+            molestiae.</p>
+        <p>Dolor exercitationem illo, in ipsam ipsum iste minus quas ut voluptatem. Accusantium atque commodi
+            consectetur ducimus ea facere, fuga itaque iure natus numquam quaerat quas quia quidem recusandae veritatis
+            voluptate.</p>
+    </section>
+</main>
+</body>
+<footer><h3>Developed by Tharindu Nilanga</h3></footer>
+</html>

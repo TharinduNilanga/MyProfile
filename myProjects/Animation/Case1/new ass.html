@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section {
+            position: relative;
+            width: 250px;
+            height: 100px;
+            background-color: red;
+            border-radius: 20px;
+            animation-name: testone;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-direction:alternate;
+
+
+
+        }
+        @keyframes testone {
+            0%{
+                left: 0;
+                background-color: #c2bc0a;
+                transform: rotate(180deg);
+            }
+           25%{
+                left: 800px;
+               top: 0;
+                background-color: #1d33ab;
+                transform: rotate(360deg);
+            }
+            50%{
+                left: 800px;
+                top:400px;
+                background-color: #d3ec32;
+                transform: rotate(540deg);
+            }
+            75%{
+                left: 0;
+                top: 400px;
+                background-color: #d215e3;
+                transform: rotate(720deg);
+            }
+            100%{
+                left: 0;
+                top: 0;
+                background-color: #19e7cb;
+                transform: rotate(900deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<section></section>
+</body>
+</html>
