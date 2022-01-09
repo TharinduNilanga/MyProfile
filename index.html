@@ -421,7 +421,8 @@
                 background-color: #0B5E20;
                 color: white;
                 font-size: 24px;
-                border-radius: 15px;
+                border-radius: 10px;
+                font-family: 'Concert One', cursive;
 
             }
             #aboutmeimgicon>img:nth-child(1){
@@ -429,7 +430,7 @@
                 width: 50px;
                 position: absolute;
                 right:310px;
-                top: 630px;
+                top: 610px;
 
             }
             #aboutmeimgicon>img:nth-child(2){
@@ -437,7 +438,7 @@
                 width: 50px;
                 position: absolute;
                 right:240px;
-                top: 630px;
+                top: 610px;
 
             }
             #aboutmeimgicon>img:nth-child(3){
@@ -445,8 +446,191 @@
                 width: 45px;
                 position: absolute;
                 right:170px;
-                top: 630px;
-
+                top: 610px;
+            }
+            .skills{
+                background-color:#081023 ;
+            }
+            #skillshead{
+                color: white;
+                font-family: 'Concert One', cursive;
+                position: absolute;
+                left: 20px;
+            }
+            #skillhr{
+                position: absolute;
+                width:85px;
+                height: 4px;
+                left:15px;
+                top: 50px;
+                background-color: white;
+                border-radius: 20px;
+            }
+            #skilltechnicalskill{
+                position: absolute;
+                width: 700px;
+                height:400px;
+                left: 40px;
+                top: 170px;
+                background-color:  #070725;
+            }
+            #skillmostusingtools{
+                position: absolute;
+                width: 700px;
+                height:400px;
+                left: 770px;
+                top: 170px;
+                background-color:  #070725;
+            }
+            #education{
+                background-color:#040518 ;
+                height: 780px;
+            }
+            #educationhead{
+                color: white;
+                font-family: 'Concert One', cursive;
+                position: absolute;
+                left: 20px;
+            }
+            #educationhr{
+                position: absolute;
+                width:145px;
+                height: 4px;
+                left:15px;
+                top: 50px;
+                background-color: white;
+                border-radius: 20px;
+            }
+            #education>div{
+                width: 350px;
+                height: 200px;
+                background-color:#1B0B47 ;
+            }
+            #educationinstitute{
+                position: absolute;
+                left: 280px;
+                top: 70px;
+                border-radius: 10px;
+            }
+            #educatiional{
+                position: absolute;
+                left: 860px;
+                top: 300px;
+                border-radius: 10px;
+            }
+            #educationol{
+                position: absolute;
+                left: 280px;
+                top: 500px;
+                border-radius: 10px;
+            }
+            #hr1{
+                height: 400px;
+                width: 5px;
+                position: absolute;
+                top: 180px;
+                left: 730px;
+                background-color: white;
+                border-radius: 20px;
+            }
+            #hr2{
+                position: absolute;
+                left: 650px;
+                top: 180px;
+                height: 5px;
+                width: 80px;
+                background-color: white;
+            }
+            #hr3{
+                position: absolute;
+                left: 730px;
+                top: 380px;
+                height: 5px;
+                width: 80px;
+                background-color: white;
+            }
+            #hr4{
+                height: 5px;
+                width: 80px;
+                background-color: white;
+                position: absolute;
+                left: 650px;
+                top: 574.7px;
+            }
+            #ediv1:nth-child(10){
+                position: absolute;
+                left: 640px;
+                top: 182px;
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 10px;
+            }
+            #ediv2:nth-child(11){
+                position: absolute;
+                left: 800px;
+                top: 382px;
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 10px;
+            }
+            #ediv3:nth-child(12){
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 10px;
+                position: absolute;
+                left: 640px;
+                top: 575.3px;
+            }
+            #educationinstitute>h1{
+                position: absolute;
+                left: 10px;
+                top: -10px;
+                font-size: 24px;
+                font-family: 'Concert One', cursive;
+                color: white;
+            }
+            #educatiional>h1{
+                position: absolute;
+                left: 10px;
+                top: -10px;
+                font-size: 24px;
+                font-family: 'Concert One', cursive;
+                color: white;
+            }
+            #educationol>h1{
+                position: absolute;
+                left: 10px;
+                top: -10px;
+                font-size: 24px;
+                font-family: 'Concert One', cursive;
+                color: white;
+            }
+            #educationinstitute>h2{
+                color: white;
+                position: absolute;
+                left: 10px;
+                top: 70px;
+                font-family: 'Tauri', sans-serif;
+                font-size: 18px;
+            }
+            #educatiional>h2{
+                color: white;
+                position: absolute;
+                left: 10px;
+                top:50px;
+                font-family: 'Tauri', sans-serif;
+                font-size: 18px;
+            }
+            #educationol>h2{
+                color: white;
+                position: absolute;
+                left: 10px;
+                top: 50px;
+                font-family: 'Tauri', sans-serif;
+                font-size: 18px;
             }
 
     </style>
@@ -521,13 +705,46 @@
             <img src="assets/images/instagram.png" alt="insta">
             <img src="assets/images/github%20(1).png" alt="git">
         </div>
-    </section>
+    </section >
     <!---------------SKILLS------------------->
-    <section></section>
+    <section class="skills">
+        <h1 id="skillshead">Skills</h1>
+        <hr id="skillhr">
+        <div id="skilltechnicalskill"></div>
+        <div id="skillmostusingtools"></div>
+    </section>
     <!---------------EDUCATION------------------->
-    <section></section>
+    <section id="education">
+        <h1 id="educationhead">Education</h1>
+        <hr id="educationhr">
+        <div id="educationinstitute">
+            <!--<img src="assets/images/ijselogo.png" alt="">-->
+            <h1>IJSE-Institute of Software Engineering</h1>
+            <h2>Ungraduated student studying <br>
+            Software Engineering</h2>
+        </div>
+        <div id="educatiional">
+            <h1>Sripalee College-Horana</h1>
+            <h2>Completed GCE(Advanced Level) <br>
+                Examination(2020)</h2>
+        </div>
+        <div id="educationol">
+            <h1>Ashoka College-Horana</h1>
+            <h2>Completed GCE(Ordinary Level) <br>
+                Examination(2017)</h2>
+        </div>
+        <hr id="hr1">
+        <hr id="hr2">
+        <hr id="hr3">
+        <hr id="hr4">
+        <div id="ediv1"></div>
+        <div id="ediv2"></div>
+        <div id="ediv3"></div>
+    </section>
     <!---------------PROJECTS------------------->
-    <section></section>
+    <section id="projects">
+        <h1 >Projects</h1>
+    </section>
     <!---------------PORTFOLIO------------------>
     <section></section>
     <!---------------CONTACT ME------------------->
