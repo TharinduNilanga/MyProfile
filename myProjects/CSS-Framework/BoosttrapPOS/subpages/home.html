@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/boostrap/css/bootstrap.min.css">
+    <style>
+        .sakuraimg{
+            width: 30px;
+            height:30px;
+        }
+        body{
+            background-color:#DCF9E4;
+        }
+        .container{
+            position: relative;
+            width: 100%!important;
+            height: 100vh!important;
+            background-color: #DCF9E4;
+        }
+        .col{
+            position: relative;
+           border: 1px solid black;
+            height: 100% !important;
+            border-radius: 10px;  background-color: honeydew!important;
+
+        }
+        #adduser{
+            width: 30px;
+            height: 30px;
+        }
+        #logOut{
+            width: 30px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #C0C2C5">
+        <div class="container-fluid">
+            <img class="sakuraimg" src="../assets/images/sakura.png" alt="">
+            <a class="navbar-brand text-success fw-bold" href="#">URESHA POS SYSTEM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../subpages/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../subpages/Customer.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../subpages/item.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../subpages/Orders.html">Order</a>
+                    </li>
+                </ul>
+
+            </div>
+            <a href="../subpages/signUp.html"> <img id="adduser" src="../assets/images/add-user.png" class="me-3" alt=""></a>
+            <a href="../index.html"><img id="logOut" src="../assets/images/logout.png" alt=""></a>
+
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container">
+        <div class="row mt-3" >
+            <div class="col me-3" >
+                <h4 class="text-secondary" id="customerHead">Customers</h4>
+                <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Address" type="text" >
+                <input class="form-control form-control-sm mt-3 mb-3" placeholder="Contact" type="text" >
+            </div>
+            <div class="col me-3">
+                <h4 class="text-secondary" id="ItemHead">Items</h4>
+                <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Price" type="text" >
+                <input class="form-control form-control-sm mt-3 mb-3" placeholder="Quantity" type="text" >
+            </div>
+            <div class="col">
+                <input class="form-control form-control-sm mt-3" placeholder="OrderId" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Disount" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Total Price" type="text" >
+                <button class="btn btn-success mt-3 mb-3">Place Order</button>
+            </div>
+        </div>
+
+        <div class="row mt-5 " id="tablehome">
+                <table class="table table-bordered border-dark table-light">
+                    <thead>
+                    <tr>
+                        <th scope="col"> Order Id</th>
+                        <th scope="col">customer Id</th>
+                        <th scope="col">Item Id</th>
+                        <th scope="col">Discount</th>
+                        <th scope="col">Total Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">O001</th>
+                        <td>C001</td>
+                        <td>I001</td>
+                        <td>10%</td>
+                        <td>1500/=</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O002</th>
+                        <td>C002</td>
+                        <td>I002</td>
+                        <td>5%</td>
+                        <td>2500/=</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O003</th>
+                        <td>C003</td>
+                        <td>I003</td>
+                        <td>5%</td>
+                        <td>4500/=</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O004</th>
+                        <td>C004</td>
+                        <td>I004</td>
+                        <td>5%</td>
+                        <td>4500/=</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O005</th>
+                        <td>C005</td>
+                        <td>I005</td>
+                        <td>5%</td>
+                        <td>4500/=</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O006</th>
+                        <td>C006</td>
+                        <td>I006</td>
+                        <td>5%</td>
+                        <td>4500/=</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O007</th>
+                        <td>C007</td>
+                        <td>I007</td>
+                        <td>5%</td>
+                        <td>4500/=</td>
+                    </tr>
+                    </tbody>
+                </table>
+        </div>
+    </section>
+</main>
+<script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/boostrap/css/bootstrap.min.css">
+    <style>
+         .sakuraimg{
+            width: 30px;
+            height:30px;
+        }
+        .container{
+            position: relative;
+            width: 100%!important;
+            height: 100vh!important;
+            background-color: #DCF9E4;
+
+        }
+        body{
+            background-color: #DCF9E4;
+        }
+        .col-5{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 300px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: honeydew!important;
+        }
+        #searchbar{
+            background-color: honeydew!important;
+            height:100px;
+            margin-top: 10px;
+        }
+        .col{
+            position: relative;
+           /* border: 2px solid blue;*/
+
+        }
+       #customeradd>button{
+            position: absolute;
+            width: 60%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+   /*    .sakuraimg{
+           width: 30px;
+           height:30px;
+       }
+       .container{
+           position: relative;
+           width: 100%;
+           height: 100vh;
+           background-color:#E5E5E5;
+       }
+       .div1{
+           position: absolute;
+           width:40%;
+           height: 50%;
+           background-color: honeydew!important;
+           border-radius: 20px;
+           left: 0;
+           top: 0;
+          margin-top: 10px;
+           margin-left: 10px;
+       }
+
+
+       .col{
+           position: relative;
+       }
+       button{
+           position: absolute;
+           left: 0;
+           right: 0;
+           margin: auto;
+       }
+       #row11{
+           position: absolute;
+           width: 70%;
+           height: 70%;
+           inset: 0 0 0 0;
+           margin: auto;
+
+       }
+*/
+         #adduser{
+             width: 30px;
+             height: 30px;
+         }
+         #logOut{
+             width: 30px;
+             height: 30px;
+         }
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #C0C2C5">
+        <div class="container-fluid">
+            <img class="sakuraimg" src="../assets/images/sakura.png" alt="">
+            <a class="navbar-brand text-success fw-bold" href="#">URESHA POS SYSTEM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../subpages/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../subpages/Customer.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../subpages/item.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../subpages/Orders.html">Order</a>
+                    </li>
+                </ul>
+
+            </div>
+            <a href="../subpages/signUp.html"> <img id="adduser" src="../assets/images/add-user.png" class="me-3" alt=""></a>
+            <a href="../index.html"><img id="logOut" src="../assets/images/logout.png" alt=""></a>
+
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container">
+        <div id="div1">
+        <div class="row">
+            <div class="col-5">
+                <h4 class="text-secondary" id="customerHead">Customers</h4>
+                <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Address" type="text" >
+                <input class="form-control form-control-sm mt-3 mb-3" placeholder="Contact" type="text" >
+
+                <div class="row" id="customeradd">
+                    <div class="col"> <button class="btn btn-success me-5">Save</button></div>
+                    <div class="col"> <button class="btn btn-success me-5">Update</button></div>
+                    <div class="col"> <button class="btn btn-danger ">Delete</button></div>
+                </div>
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col" id="searchbar">
+                <form class="d-flex mt-5">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="row mt-5">
+            <table class="table table-bordered border-dark table-light">
+                <thead>
+                <tr>
+                    <th scope="col">customer Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">contact</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>C001</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C002</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C003</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C004</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C005</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C006</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C007</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+<script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
