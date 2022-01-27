@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/boostrap/css/bootstrap.min.css">
+    <style>
+        .sakuraimg{
+            width: 30px;
+            height:30px;
+        }
+        body{
+            background-color:#DCF9E4;
+        }
+        body>main>section:nth-child(1),container{
+            position: relative;
+            width: 100%!important;
+            height: 100vh!important;
+            background-color: #DCF9E4;
+        }
+        body>main>section:nth-child(1)>div>div,col{
+            position: relative;
+            border: 1px solid black;
+            height: 100% !important;
+            border-radius: 10px;
+            background-color: honeydew!important;
+
+        }
+        #adduser{
+            width: 30px;
+            height: 30px;
+        }
+        #logOut{
+            width: 30px;
+            height: 30px;
+        }
+        /*////////////*/
+        #itemcontainer{
+            position: relative;
+            width: 100%!important;
+            height: 100vh!important;
+            background-color: #DCF9E4;
+
+        }
+        #itemcol{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 300px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: honeydew!important;
+        }
+        #searchbar{
+            background-color: honeydew!important;
+            height:100px;
+            margin-top: 10px;
+        }
+        body>main>section:nth-child(2)>div>div>div:nth-child(2),col{
+            position: relative;
+            /*       border: 2px solid blue;*/
+
+        }
+        #itemadd>button{
+            position: absolute;
+            width: 60%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        /*/////////////////////*/
+        #CustomerContainer{
+            position: relative;
+            width: 100%!important;
+            height: 100vh!important;
+            background-color: #DCF9E4;
+
+        }
+        /*body>section:nth-child(3)>div:nth-child(1)>div>div:nth-child(1),col-5*/
+        #col5{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 300px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: honeydew!important;
+        }
+        #searchbar1{
+            background-color: honeydew!important;
+            height:100px;
+            margin-top: 10px;
+        }
+        body>section:nth-child(3)>div:nth-child(1)>div,col{
+            position: relative;
+            /* border: 2px solid blue;*/
+
+        }
+        #customeradd>button{
+            position: absolute;
+            width: 60%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        /*///////////*/
+        #loginContainer{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color:#E5E5E5;
+        }
+        .divlogin{
+            position: absolute;
+            width:40%;
+            height: 50%;
+            background-color: honeydew!important;
+            border-radius: 20px;
+            inset: 0 0 0 0;
+            margin: auto;
+        }
+
+        .col{
+            position: relative;
+        }
+        #row3>div>a>button{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #row11{
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            inset: 0 0 0 0;
+            margin: auto;
+        }
+     /*   ////////*/
+        #signUpContainer{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color:#E5E5E5;
+        }
+        #signDiv{
+            position: absolute;
+            width:40%;
+            height: 70%;
+            background-color: honeydew!important;
+            border-radius: 20px;
+            inset: 0 0 0 0;
+            margin: auto;
+        }
+
+
+        .col{
+            position: relative;
+        }
+        #row4>div>a>button{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #rowsign{
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            inset: 0 0 0 0;
+            margin: auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #C0C2C5 ;display: none" id="navbarheader">
+        <div class="container-fluid">
+            <img class="sakuraimg" src="../assets/images/sakura.png" alt="">
+            <a class="navbar-brand text-success fw-bold" href="#">URESHA POS SYSTEM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link "  id="homenav" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  id="customernav" aria-current="page" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  id="itemnav" href="#">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  id="ordernav" href="#">Order</a>
+                    </li>
+                </ul>
+
+            </div>
+            <a href="#" id="SignUpNav"> <img id="adduser" src="../assets/images/add-user.png" class="me-3" alt=""></a>
+            <a href="#" id="loginNav"><img id="logOut" src="../assets/images/logout.png" alt=""></a>
+
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container " style="display: none" id="homeContainer" >
+        <div class="row mt-3" >
+            <div class="col me-3" >
+                <h4 class="text-secondary" id="cHead">Customers</h4>
+                <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Address" type="text" >
+                <input class="form-control form-control-sm mt-3 mb-3" placeholder="Contact" type="text" >
+            </div>
+            <div class="col me-3">
+                <h4 class="text-secondary" id="IHead">Items</h4>
+                <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Price" type="text" >
+                <input class="form-control form-control-sm mt-3 mb-3" placeholder="Quantity" type="text" >
+            </div>
+            <div class="col">
+                <input class="form-control form-control-sm mt-3" placeholder="OrderId" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Disount" type="text" >
+                <input class="form-control form-control-sm mt-3" placeholder="Total Price" type="text" >
+                <button class="btn btn-success mt-3 mb-3">Place Order</button>
+            </div>
+        </div>
+
+        <div class="row mt-5 " id="tablehome">
+            <table class="table table-bordered border-dark table-light">
+                <thead>
+                <tr>
+                    <th scope="col"> Order Id</th>
+                    <th scope="col">customer Id</th>
+                    <th scope="col">Item Id</th>
+                    <th scope="col">Discount</th>
+                    <th scope="col">Total Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">O001</th>
+                    <td>C001</td>
+                    <td>I001</td>
+                    <td>10%</td>
+                    <td>1500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O002</th>
+                    <td>C002</td>
+                    <td>I002</td>
+                    <td>5%</td>
+                    <td>2500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O003</th>
+                    <td>C003</td>
+                    <td>I003</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O004</th>
+                    <td>C004</td>
+                    <td>I004</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O005</th>
+                    <td>C005</td>
+                    <td>I005</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O006</th>
+                    <td>C006</td>
+                    <td>I006</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O007</th>
+                    <td>C007</td>
+                    <td>I007</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="container"  style="display: none"  id="itemcontainer">
+        <div id="div1">
+            <div class="row">
+                <div class="col-5" id="itemcol">
+                    <h4 class="text-secondary" id="itemHead">Items</h4>
+                    <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                    <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
+                    <input class="form-control form-control-sm mt-3" placeholder="Price" type="text" >
+                    <input class="form-control form-control-sm mt-3 mb-3" placeholder="Quantity" type="text" >
+
+                    <div class="row" id="itemadd">
+                        <div class="col"> <button class="btn btn-success me-5">Save</button></div>
+                        <div class="col"> <button class="btn btn-success me-5">Update</button></div>
+                        <div class="col"> <button class="btn btn-danger ">Delete</button></div>
+                    </div>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col" id="searchbar">
+                    <form class="d-flex mt-5">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <table class="table table-bordered border-dark table-light">
+                <thead>
+                <tr>
+                    <th scope="col">Item code</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quatity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>I001</td>
+                    <td>Sugar</td>
+                    <td>200/=</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>I002</td>
+                    <td>Biscuit</td>
+                    <td>100/=</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>I003</td>
+                    <td>Dhal</td>
+                    <td>150/=</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>I004</td>
+                    <td>Rice</td>
+                    <td>200/=</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>I005</td>
+                    <td>Coffee</td>
+                    <td>200/=</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>I006</td>
+                    <td>Tea Powder</td>
+                    <td>100/=</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>I007</td>
+                    <td>Milk Powder</td>
+                    <td>400/=</td>
+                    <td>30</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="container"  style="display: none"  id="CustomerContainer">
+        <div id="div2">
+            <div class="row">
+                <div class="col-5" id="col5">
+                    <h4 class="text-secondary" id="customerHead">Customers</h4>
+                    <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                    <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
+                    <input class="form-control form-control-sm mt-3" placeholder="Address" type="text" >
+                    <input class="form-control form-control-sm mt-3 mb-3" placeholder="Contact" type="text" >
+
+                    <div class="row" id="customeradd">
+                        <div class="col"> <button class="btn btn-success me-5">Save</button></div>
+                        <div class="col"> <button class="btn btn-success me-5">Update</button></div>
+                        <div class="col"> <button class="btn btn-danger ">Delete</button></div>
+                    </div>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col" id="searchbar1">
+                    <form class="d-flex mt-5">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <table class="table table-bordered border-dark table-light">
+                <thead>
+                <tr>
+                    <th scope="col">customer Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">contact</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>C001</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C002</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C003</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C004</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C005</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C006</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                <tr>
+                    <td>C007</td>
+                    <td>Kamal</td>
+                    <td>Horana</td>
+                    <td>0768967567</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="container "  style="display: none"  id="orderContainer">
+        <div class="row">
+            <div class="col">
+                <form class="d-flex mt-5">
+                    <input class="form-control me-2" type="search" placeholder="Enter Order Id To Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row mt-5">
+            <table class="table table-bordered border-dark table-light">
+                <thead>
+                <tr>
+                    <th scope="col"> Order Id</th>
+                    <th scope="col">customer Id</th>
+                    <th scope="col">Item Id</th>
+                    <th scope="col">Discount</th>
+                    <th scope="col">Total Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">O001</th>
+                    <td>C001</td>
+                    <td>I001</td>
+                    <td>10%</td>
+                    <td>1500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O002</th>
+                    <td>C002</td>
+                    <td>I002</td>
+                    <td>5%</td>
+                    <td>2500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O003</th>
+                    <td>C003</td>
+                    <td>I003</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O004</th>
+                    <td>C004</td>
+                    <td>I004</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O005</th>
+                    <td>C005</td>
+                    <td>I005</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O006</th>
+                    <td>C006</td>
+                    <td>I006</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                <tr>
+                    <th scope="row">O007</th>
+                    <td>C007</td>
+                    <td>I007</td>
+                    <td>5%</td>
+                    <td>4500/=</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="container-fluid" style="display:block" id="loginContainer">
+        <div class="divlogin" >
+            <div class="row" id="row11">
+                <div class="col">
+                    <div class="row" id="row1" >
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="row" id="row2" >
+                        <div class="col">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px" id="row3" >
+                        <div class="col" >
+                            <a href="#" id="btnLogin">  <button type="submit" class="btn btn-success" style="width: 70%">LOGIN</button></a>
+                        </div>
+                        <div class="col">
+                            <a href="#" id="btnSignUp"><button type="submit" class="btn" style="width: 70%; background-color: #1186F4; color: white" >SIGN UP</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="container-fluid" style="display:none" id="signUpContainer">
+        <div class="div1" id="signDiv" >
+            <div class="row" id="rowsign">
+                <div class="col">
+                    <div class="row" id="row01" >
+                        <div class="col">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="row" id="row02" >
+                        <div class="col">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="Name" class="form-control" id="Name">
+                        </div>
+                    </div>
+                    <div class="row" id="row03" >
+                        <div class="col">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword">
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 30px" id="row4" >
+                        <div class="col">
+                            <a href="#" id="SignUpbtn1">   <button type="submit" class="btn" style="width: 70%; background-color: #1186F4; color: white" >SIGN UP</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
