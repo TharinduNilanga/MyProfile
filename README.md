@@ -36,4 +36,3 @@
 ![ image ](assets/redme/6.png)
 #CONTACT ME
 ![ image ](assets/redme/7.png)
-batch process
