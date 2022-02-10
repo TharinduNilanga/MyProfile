@@ -169,7 +169,9 @@
             inset: 0 0 0 0;
             margin: auto;
         }
-
+      #tblAddOrder>tr:hover{
+          background-color: #0dcaf0;
+      }
 
 
     </style>
@@ -211,28 +213,28 @@
         <div class="row mt-3" >
             <div class="col me-3" >
                 <h4 class="text-secondary" id="cHead">Customers</h4>
-                <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                <input class="form-control form-control-sm mt-3" name="txtcusId" id="txtcusId" placeholder="Id" type="text" >
                 <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
                 <input class="form-control form-control-sm mt-3" placeholder="Address" type="text" >
                 <input class="form-control form-control-sm mt-3 mb-3" placeholder="Contact" type="text" >
             </div>
             <div class="col me-3">
                 <h4 class="text-secondary" id="IHead">Items</h4>
-                <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
+                <input class="form-control form-control-sm mt-3" name="txtitemId"  id="txtitemId"  placeholder="Id" type="text" >
                 <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
                 <input class="form-control form-control-sm mt-3" placeholder="Price" type="text" >
                 <input class="form-control form-control-sm mt-3 mb-3" placeholder="Quantity" type="text" >
             </div>
             <div class="col">
-                <input class="form-control form-control-sm mt-3" placeholder="OrderId" type="text" >
-                <input class="form-control form-control-sm mt-3" placeholder="Disount" type="text" >
-                <input class="form-control form-control-sm mt-3" placeholder="Total Price" type="text" >
-                <button class="btn btn-success mt-3 mb-3">Place Order</button>
+                <input class="form-control form-control-sm mt-3" name="txtorderId"  id="txtorderId" placeholder="OrderId" type="text" >
+                <input class="form-control form-control-sm mt-3" name="txtdis"  id="txtdis" placeholder="Disount" type="text" >
+                <input class="form-control form-control-sm mt-3" name="txtttlPrice"  id="txtttlPrice" placeholder="Total Price" type="text" >
+                <button class="btn btn-success mt-3 mb-3" id="btnPlaceOrder">Place Order</button>
             </div>
         </div>
 
         <div class="row mt-5 " id="tablehome">
-            <table class="table table-bordered border-dark table-light">
+            <table class="table table-bordered border-dark table-light" id="tblhome">
                 <thead>
                 <tr>
                     <th scope="col"> Order Id</th>
@@ -242,8 +244,8 @@
                     <th scope="col">Total Price</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
+                <tbody id="tblAddOrder">
+               <!-- <tr>
                     <th scope="row">O001</th>
                     <td>C001</td>
                     <td>I001</td>
@@ -291,7 +293,7 @@
                     <td>I007</td>
                     <td>5%</td>
                     <td>4500/=</td>
-                </tr>
+                </tr>-->
                 </tbody>
             </table>
         </div>
@@ -301,13 +303,13 @@
             <div class="row">
                 <div class="col-5" id="itemcol">
                     <h4 class="text-secondary" id="itemHead">Items</h4>
-                    <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
-                    <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
-                    <input class="form-control form-control-sm mt-3" placeholder="Price" type="text" >
-                    <input class="form-control form-control-sm mt-3 mb-3" placeholder="Quantity" type="text" >
+                    <input class="form-control form-control-sm mt-3" name="txtItemId" id="txtitemidnew" placeholder="Id" type="text" >
+                    <input class="form-control form-control-sm mt-3" name="txtItemName" id="txtItemName" placeholder="Name" type="text" >
+                    <input class="form-control form-control-sm mt-3" name="txtItemPrice" id="txtItemPrice" placeholder="Price" type="text" >
+                    <input class="form-control form-control-sm mt-3 mb-3" name="txtItemQuantity" id="txtItemQuantity" placeholder="Quantity" type="text" >
 
                     <div class="row" id="itemadd">
-                        <div class="col"> <button class="btn btn-success me-5">Save</button></div>
+                        <div class="col"> <button class="btn btn-success me-5" id="btnItemSave">Save</button></div>
                         <div class="col"> <button class="btn btn-success me-5">Update</button></div>
                         <div class="col"> <button class="btn btn-danger ">Delete</button></div>
                     </div>
@@ -324,7 +326,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <table class="table table-bordered border-dark table-light">
+            <table class="table table-bordered border-dark table-light" id="tblItemTable">
                 <thead>
                 <tr>
                     <th scope="col">Item code</th>
@@ -333,8 +335,8 @@
                     <th scope="col">Quatity</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
+                <tbody id="tblItem">
+               <!-- <tr>
                     <td>I001</td>
                     <td>Sugar</td>
                     <td>200/=</td>
@@ -375,7 +377,7 @@
                     <td>Milk Powder</td>
                     <td>400/=</td>
                     <td>30</td>
-                </tr>
+                </tr>-->
                 </tbody>
             </table>
         </div>
@@ -385,13 +387,13 @@
             <div class="row">
                 <div class="col-5" id="col5">
                     <h4 class="text-secondary" id="customerHead">Customers</h4>
-                    <input class="form-control form-control-sm mt-3" placeholder="Id" type="text" >
-                    <input class="form-control form-control-sm mt-3" placeholder="Name" type="text" >
-                    <input class="form-control form-control-sm mt-3" placeholder="Address" type="text" >
-                    <input class="form-control form-control-sm mt-3 mb-3" placeholder="Contact" type="text" >
+                    <input class="form-control form-control-sm mt-3" name="txtCustomerId" id="txtCustomerId" placeholder="Id" type="text" >
+                    <input class="form-control form-control-sm mt-3" name="txtCustomerName" id="txtCustomerName" placeholder="Name" type="text" >
+                    <input class="form-control form-control-sm mt-3" name="txtCustomerAddress" id="txtCustomerAddress" placeholder="Address" type="text" >
+                    <input class="form-control form-control-sm mt-3 mb-3" name="txtCustomerContact" id="txtCustomerContact" placeholder="Contact" type="text" >
 
                     <div class="row" id="customeradd">
-                        <div class="col"> <button class="btn btn-success me-5">Save</button></div>
+                        <div class="col"> <button class="btn btn-success me-5" id="btnSaveCustomer">Save</button></div>
                         <div class="col"> <button class="btn btn-success me-5">Update</button></div>
                         <div class="col"> <button class="btn btn-danger ">Delete</button></div>
                     </div>
@@ -408,7 +410,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <table class="table table-bordered border-dark table-light">
+            <table class="table table-bordered border-dark table-light" id="tblCustomerTable">
                 <thead>
                 <tr>
                     <th scope="col">customer Id</th>
@@ -417,8 +419,8 @@
                     <th scope="col">contact</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
+                <tbody id="tblCustomer">
+              <!--  <tr>
                     <td>C001</td>
                     <td>Kamal</td>
                     <td>Horana</td>
@@ -459,7 +461,7 @@
                     <td>Kamal</td>
                     <td>Horana</td>
                     <td>0768967567</td>
-                </tr>
+                </tr>-->
                 </tbody>
             </table>
         </div>
@@ -606,6 +608,44 @@
     </section>
 </main>
 <script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="assets/js/script.js"></script>
+
+<!--<script>
+    /*$(function () {
+        $("#btnPlaceOrder").click(function () {
+            var cusId=$('input[name="txtcusId"]').val();
+            var itemId=$('input[name="txtitemId"]').val();
+            var orderId=$('input[name="txtorderId"]').val();
+            var discount=$('input[name="txtdis"]').val();
+            var total=$('input[name="txtttlPrice"]').val();
+
+            var tr='<tr><td>'+orderId+'</td> <td>'+cusId+'</td> <td>'+itemId+'</td> <td>'+discount+'</td> <td>'+total+'</td></tr>';
+            $("#tblAddOrder").append(tr);
+        });
+        $("#btnItemSave").click(function () {
+            var ItemId=$('input[name="txtItemId"]').val();
+            var ItemName=$('input[name="txtItemName"]').val();
+            var ItemPrice=$('input[name="txtItemPrice"]').val();
+            var ItemQuantity=$('input[name="txtItemQuantity"]').val();
+
+
+            var tr='<tr><td>'+ItemId+'</td> <td>'+ItemName+'</td> <td>'+ItemPrice+'</td> <td>'+ItemQuantity+'</td></tr>';
+            $("#
+tblItem").append(tr);
+        });
+        $("#btnSaveCustomer").click(function () {
+            var CustomerId=$('input[name="txtCustomerId"]').val();
+            var CustomerName=$('input[name="txtCustomerName"]').val();
+            var CustomerAddress=$('input[name="txtCustomerAddress"]').val();
+            var CustomerContact=$('input[name="txtCustomerContact"]').val();
+
+
+            var tr='<tr><td>'+CustomerId+'</td> <td>'+CustomerName+'</td> <td>'+CustomerAddress+'</td> <td>'+CustomerContact+'</td></tr>';
+            $("#tblCustomer").append(tr);
+        });
+    });*/
+
+</script>-->
 </body>
 </html>
