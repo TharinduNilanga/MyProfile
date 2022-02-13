@@ -301,15 +301,19 @@
     <section class="container"  style="display: none"  id="itemcontainer">
         <div id="div1">
             <div class="row">
-                <div class="col-5" id="itemcol">
+                <div class="col-5" id="itemcol" onkeyup="sucessI()">
                     <h4 class="text-secondary" id="itemHead">Items</h4>
-                    <input class="form-control form-control-sm mt-3" name="txtItemId" id="txtitemidnew" placeholder="Id" type="text" >
-                    <input class="form-control form-control-sm mt-3" name="txtItemName" id="txtItemName" placeholder="Name" type="text" >
-                    <input class="form-control form-control-sm mt-3" name="txtItemPrice" id="txtItemPrice" placeholder="Price" type="text" >
-                    <input class="form-control form-control-sm mt-3 mb-3" name="txtItemQuantity" id="txtItemQuantity" placeholder="Quantity" type="text" >
+                    <input class="form-control form-control-sm mt-3" name="txtItemId" id="txtitemidnew" placeholder="Id" type="text"  style="box-shadow: none">
+                    <p id="errorI" style="color: #ff253a ; font-size: 10px"></p>
+                    <input class="form-control form-control-sm mt-3" name="txtItemName" id="txtItemName" placeholder="Name" type="text"  style="box-shadow: none">
+                    <p id="errorI1" style="color: #ff253a ; font-size: 10px"></p>
+                    <input class="form-control form-control-sm mt-3" name="txtItemPrice" id="txtItemPrice" placeholder="Price" type="text"  style="box-shadow: none">
+                    <p id="errorI2" style="color: #ff253a ; font-size: 10px"></p>
+                    <input class="form-control form-control-sm mt-3 mb-3" name="txtItemQuantity" id="txtItemQuantity" placeholder="Quantity" type="text"  style="box-shadow: none">
+                    <p id="errorI3" style="color: #ff253a ; font-size: 10px"></p>
 
                     <div class="row" id="itemadd">
-                        <div class="col"> <button class="btn btn-success me-5" id="btnItemSave">Save</button></div>
+                        <div class="col"> <button class="btn btn-success me-5" id="btnItemSave" disabled>Save</button></div>
                         <div class="col"> <button class="btn btn-success me-5">Update</button></div>
                         <div class="col"> <button class="btn btn-danger ">Delete</button></div>
                     </div>
@@ -385,15 +389,19 @@
     <section class="container"  style="display: none"  id="CustomerContainer">
         <div id="div2">
             <div class="row">
-                <div class="col-5" id="col5">
+                <div class="col-5" id="col5" onkeyup="sucess()">
                     <h4 class="text-secondary" id="customerHead">Customers</h4>
-                    <input class="form-control form-control-sm mt-3" name="txtCustomerId" id="txtCustomerId" placeholder="Id" type="text" >
-                    <input class="form-control form-control-sm mt-3" name="txtCustomerName" id="txtCustomerName" placeholder="Name" type="text" >
-                    <input class="form-control form-control-sm mt-3" name="txtCustomerAddress" id="txtCustomerAddress" placeholder="Address" type="text" >
-                    <input class="form-control form-control-sm mt-3 mb-3" name="txtCustomerContact" id="txtCustomerContact" placeholder="Contact" type="text" >
+                    <input class="form-control form-control-sm mt-3"   name="txtCustomerId" id="txtCustomerId" placeholder="Id" type="text" style="box-shadow: none" >
+                    <p id="error" style="color: #ff253a ; font-size: 10px"></p>
+                    <input class="form-control form-control-sm mt-3" name="txtCustomerName" id="txtCustomerName" placeholder="Name" type="text"   style="box-shadow: none">
+                    <p id="error1" style="color: #ff253a ; font-size: 10px"></p>
+                    <input class="form-control form-control-sm mt-3"  name="txtCustomerAddress" id="txtCustomerAddress" placeholder="Address" type="text"  style="box-shadow: none">
+                    <p id="error2" style="color: #ff253a ; font-size: 10px"></p>
+                    <input class="form-control form-control-sm mt-3 mb-3"  name="txtCustomerContact" id="txtCustomerContact" placeholder="Contact" type="text"  style="box-shadow: none">
+                    <p id="error3" style="color: #ff253a ; font-size: 10px"></p>
 
                     <div class="row" id="customeradd">
-                        <div class="col"> <button class="btn btn-success me-5" id="btnSaveCustomer">Save</button></div>
+                        <div class="col"> <button class="btn btn-success me-5" id="btnSaveCustomer" disabled>Save</button></div>
                         <div class="col"> <button class="btn btn-success me-5">Update</button></div>
                         <div class="col"> <button class="btn btn-danger ">Delete</button></div>
                     </div>
