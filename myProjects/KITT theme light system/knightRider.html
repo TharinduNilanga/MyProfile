@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/boostrap/css/bootstrap.min.css">
+    <style>
+        main{
+            position: relative;
+            background-color: black;
+            height: 100vh;
+        }
+        .container{
+            position: relative;
+        }
+        #div1{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top:478px;
+            bottom: 0;
+            margin: auto;
+        }
+        .col{
+           background-color: white;
+            border: 1px solid black;
+            width: 30px;
+            height:40px;
+        }
+        #btn{
+            position: absolute;
+            left:720px;
+            right: 0;
+            top: 369px;
+            bottom: 0px;
+            margin: auto;
+        }
+        h1{
+            position: absolute;
+            left: 558px;
+            right: 0;
+            top: 100px;
+            bottom: 0px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1 style="color: red">JavaScript Knight Rider</h1>
+    <div class="container">
+        <div id="div1">
+        <div class="row">
+            <div class="col" id="slot1" style="background-color: #ff253a">
+
+            </div>
+            <div class="col" id="slot2" style="background-color: #ff253a">
+
+            </div>
+            <div class="col" id="slot3" style="background-color: #ff253a">
+
+            </div>
+            <div class="col" id="slot4" style="background-color: #ff253a">
+
+            </div>
+            <div class="col" id="slot5" style="background-color: #ff253a">
+
+            </div>
+            <div class="col" id="slot6" style="background-color: #ff253a">
+
+            </div>
+            <div class="col" id="slot7"style="background-color: #ff253a">
+
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="btn">
+        <button id="play">play</button>
+        <button id="stop"> stop</button>
+    </div>
+    <audio id="music"  src="assets/audio/kitt%20audio.mp3"></audio>
+</main>
+<script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+     var slotOne=$("#slot1");
+     var slotTwo=$("#slot2");
+     var slotThree=$("#slot3");
+     var slotFourth=$("#slot4");
+     var slotFive=$("#slot5");
+     var slotSix=$("#slot6");
+     var slotSeven=$("#slot7");
+
+     var playAnime;
+     var playMusic;
+     $("#play").click(function () {
+         clearInterval(playAnime);
+         clearInterval(playMusic);
+        playAnime=setInterval(colorAnime,120);
+        playMusic=setInterval(Music,120);
+     });
+     $("#stop").click(function () {
+         clearInterval(playAnime);
+         clearInterval(playMusic);
+     });
+    function Music(){
+        var a1=$("#music");
+        a1.play();
+        return a1;
+    }
+    let animeCount=0;
+    function colorAnime() {
+        if (animeCount == 0){
+            slotOne.css('opacity','100%')
+            slotTwo.css('opacity','80%')
+            slotThree.css('opacity','50%')
+            slotFourth.css('opacity','50%')
+            slotFive.css('opacity','30%')
+            slotSix.css('opacity','20%')
+            slotSeven.css('opacity','20%')
+            animeCount++;
+        }else if (animeCount == 1){
+            slotOne.css('opacity','80%')
+            slotTwo.css('opacity','100%')
+            slotThree.css('opacity','80%')
+            slotFourth.css('opacity','50%')
+            slotFive.css('opacity','50%')
+            slotSix.css('opacity','30%')
+            slotSeven.css('opacity','20%')
+            animeCount++;
+        }else if (animeCount == 2){
+            slotOne.css('opacity','80%')
+            slotTwo.css('opacity','100%')
+            slotThree.css('opacity','100%')
+            slotFourth.css('opacity','80%')
+            slotFive.css('opacity','50%')
+            slotSix.css('opacity','50%')
+            slotSeven.css('opacity','30%')
+            animeCount++;
+        }else if (animeCount == 3){
+            slotOne.css('opacity','50%')
+            slotTwo.css('opacity','80%')
+            slotThree.css('opacity','100%')
+            slotFourth.css('opacity','100%')
+            slotFive.css('opacity','80%')
+            slotSix.css('opacity','50%')
+            slotSeven.css('opacity','50%')
+            animeCount++;
+        }else if (animeCount == 4){
+            slotOne.css('opacity','50%')
+            slotTwo.css('opacity','50%')
+            slotThree.css('opacity','80%')
+            slotFourth.css('opacity','100%')
+            slotFive.css('opacity','100%')
+            slotSix.css('opacity','80%')
+            slotSeven.css('opacity','50%')
+            animeCount++;
+        }else if (animeCount == 5){
+            slotOne.css('opacity','30%')
+            slotTwo.css('opacity','50%')
+            slotThree.css('opacity','50%')
+            slotFourth.css('opacity','80%')
+            slotFive.css('opacity','100%')
+            slotSix.css('opacity','100%')
+            slotSeven.css('opacity','80%')
+            animeCount++;
+        }else if (animeCount == 6){
+            slotOne.css('opacity','20%')
+            slotTwo.css('opacity','20%')
+            slotThree.css('opacity','30%')
+            slotFourth.css('opacity','50%')
+            slotFive.css('opacity','50%')
+            slotSix.css('opacity','80%')
+            slotSeven.css('opacity','100%')
+            animeCount++;
+        }  else if (animeCount == 7){
+         slotOne.css('opacity','30%')
+         slotTwo.css('opacity','50%')
+         slotThree.css('opacity','50%')
+         slotFourth.css('opacity','80%')
+         slotFive.css('opacity','100%')
+         slotSix.css('opacity','100%')
+         slotSeven.css('opacity','80%')
+         animeCount++;
+     }else if (animeCount == 8){
+            slotOne.css('opacity','50%')
+            slotTwo.css('opacity','50%')
+            slotThree.css('opacity','80%')
+            slotFourth.css('opacity','100%')
+            slotFive.css('opacity','100%')
+            slotSix.css('opacity','80%')
+            slotSeven.css('opacity','50%')
+            animeCount++;
+        }else if (animeCount == 9){
+            slotOne.css('opacity','50%')
+            slotTwo.css('opacity','80%')
+            slotThree.css('opacity','100%')
+            slotFourth.css('opacity','100%')
+            slotFive.css('opacity','80%')
+            slotSix.css('opacity','50%')
+            slotSeven.css('opacity','50%')
+            animeCount++;
+        }else if (animeCount == 10){
+            slotOne.css('opacity','80%')
+            slotTwo.css('opacity','100%')
+            slotThree.css('opacity','100%')
+            slotFourth.css('opacity','80%')
+            slotFive.css('opacity','50%')
+            slotSix.css('opacity','50%')
+            slotSeven.css('opacity','30%')
+            animeCount++;
+        }else if (animeCount == 11){
+            slotOne.css('opacity','100%')
+            slotTwo.css('opacity','100%')
+            slotThree.css('opacity','80%')
+            slotFourth.css('opacity','50%')
+            slotFive.css('opacity','50%')
+            slotSix.css('opacity','30%')
+            slotSeven.css('opacity','20%')
+            animeCount++;
+        }else if (animeCount ==12){
+            slotOne.css('opacity','100%')
+            slotTwo.css('opacity','80%')
+            slotThree.css('opacity','50%')
+            slotFourth.css('opacity','50%')
+            slotFive.css('opacity','30%')
+            slotSix.css('opacity','20%')
+            slotSeven.css('opacity','20%')
+            animeCount=0;
+       }
+    }
+
+
+</script>
+</body>
+</html>
