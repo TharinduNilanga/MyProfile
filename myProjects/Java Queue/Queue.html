@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/boostrap/css/bootstrap.min.css">
+    <style>
+        main{
+            background-color: gray;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        .col{
+
+            width: 30px;
+            height: 50px;
+        }
+        #div1{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 270px;
+            bottom: 0;
+            margin: auto;
+        }
+        h1{
+            position: relative;
+            left: 600px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>JavaScript Queue</h1>
+    <div class="container" style="position: relative">
+        <div id="div1">
+        <div class="row">
+            <div class="col" id="slot1" >
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col me-2"  id="slot2" >
+
+            </div>
+            <div class="col me-2"  id="slot3" >
+
+            </div>
+            <div class="col me-2"  id="slot4" >
+
+            </div>
+            <div class="col me-2"  id="slot5" >
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col"  id="slot6" >
+
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    var slotOne=$("#slot1");
+    var slotTwo=$("#slot2");
+    var slotThree=$("#slot3");
+    var slotFourth=$("#slot4");
+    var slotFive=$("#slot5");
+    var slotSix=$("#slot6");
+    var run;
+    /*
+            #F04A44
+            #1C580D
+            #1864E8
+            #EEED3E
+            #F3D6C5
+            #EF9AF6
+            */
+        clearInterval(run);
+        run=setInterval(animeColor,800);
+    let count=0;
+    function  animeColor() {
+        if (count==0){
+            slotOne.css("backgroundColor",'#F04A44')
+            slotTwo.css("backgroundColor",'#1C580D')
+            slotThree.css("backgroundColor",'#1864E8')
+            slotFourth.css("backgroundColor",'#EEED3E')
+            slotFive.css("backgroundColor",'#F3D6C5')
+            slotSix.css("backgroundColor",'#EF9AF6')
+            count++;
+        }else if (count==1){
+            slotOne.css("backgroundColor",'#EF9AF6')
+            slotTwo.css("backgroundColor",'#F04A44')
+            slotThree.css("backgroundColor",'#1C580D')
+            slotFourth.css("backgroundColor",'#1864E8')
+            slotFive.css("backgroundColor",'#EEED3E')
+            slotSix.css("backgroundColor",'#F3D6C5')
+            count++;
+        }else if (count==2){
+            slotOne.css("backgroundColor",'#F3D6C5')
+            slotTwo.css("backgroundColor",'#EF9AF6')
+            slotThree.css("backgroundColor",'#F04A44')
+            slotFourth.css("backgroundColor",'#1C580D')
+            slotFive.css("backgroundColor",'#1864E8')
+            slotSix.css("backgroundColor",'#EEED3E')
+            count++;
+        }else if (count==3){
+            slotOne.css("backgroundColor",'#EEED3E')
+            slotTwo.css("backgroundColor",'#F3D6C5')
+            slotThree.css("backgroundColor",'#EF9AF6')
+            slotFourth.css("backgroundColor",'#F04A44')
+            slotFive.css("backgroundColor",'#1C580D')
+            slotSix.css("backgroundColor",'#1864E8')
+            count++;
+        }else if (count==4){
+            slotOne.css("backgroundColor",'#1864E8')
+            slotTwo.css("backgroundColor",'#EEED3E')
+            slotThree.css("backgroundColor",'#F3D6C5')
+            slotFourth.css("backgroundColor",'#EF9AF6')
+            slotFive.css("backgroundColor",'#F04A44')
+            slotSix.css("backgroundColor",'#1C580D')
+            count++;
+        }else if (count==5){
+            slotOne.css("backgroundColor",'#1C580D')
+            slotTwo.css("backgroundColor",'#1864E8')
+            slotThree.css("backgroundColor",'#EEED3E')
+            slotFourth.css("backgroundColor",'#F3D6C5')
+            slotFive.css("backgroundColor",'#EF9AF6')
+            slotSix.css("backgroundColor",'#F04A44')
+            count++;
+        }else if (count==6){
+            slotOne.css("backgroundColor",'#F04A44')
+            slotTwo.css("backgroundColor",'#1C580D')
+            slotThree.css("backgroundColor",'#1864E8')
+            slotFourth.css("backgroundColor",'#EEED3E')
+            slotFive.css("backgroundColor",'#F3D6C5')
+            slotSix.css("backgroundColor",'#EF9AF6')
+            count=0;
+        }
+    }
+</script>
+</body>
+</html>
