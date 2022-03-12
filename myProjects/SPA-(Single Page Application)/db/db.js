@@ -1,4 +1,4 @@
 var customerDB=new Array();
 var itemDB=new Array();
 var orderDB=new Array();
-var SignUpDB=new Array();
+var signUpDB=new Array();
